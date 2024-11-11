@@ -1,0 +1,12 @@
+traffic_light.c:10:6:red_led_ver	8	static
+traffic_light.c:16:6:yellow_led_ver	8	static
+traffic_light.c:22:6:green_led_ver	8	static
+traffic_light.c:30:6:red_led_hor	8	static
+traffic_light.c:36:6:yellow_led_hor	8	static
+traffic_light.c:42:6:green_led_hor	8	static
+traffic_light.c:50:6:toggle_red_led	8	static
+traffic_light.c:55:6:toggle_yellow_led	8	static
+traffic_light.c:60:6:toggle_green_led	8	static
+traffic_light.c:67:6:turn_off_yellow_green	8	static
+traffic_light.c:74:6:turn_off_red_green	8	static
+traffic_light.c:81:6:turn_off_red_yellow	8	static
