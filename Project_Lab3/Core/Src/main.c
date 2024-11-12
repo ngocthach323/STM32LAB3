@@ -56,14 +56,7 @@ static void MX_GPIO_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-/* tạo ra timer 10m/s, PA5 chớp tắt mỗi s 1 lần (tất cả các lab)
- * dùng đèn check PC9 (chớp tắt khi có 1 nút nhấn đc nhấn)
- *
- *
- *
- *
- *
- * */
+
 /* USER CODE END 0 */
 
 /**
@@ -101,9 +94,9 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer(2, 250);
-  setTimer(4, 500); // nhấp nháy đèn khi modify time duration tần số 2Hz
-  setTimer(9, 1000); // check setTimer
+  setTimer(2, 250);		// hiển thị 7SEG trong trạng thái modify
+  setTimer(4, 500); 	// nhấp nháy đèn khi modify time duration tần số 2Hz
+  setTimer(9, 1000); 	// check setTimer
   while (1)
   {
     /* USER CODE END WHILE */

@@ -39,6 +39,9 @@ void fsm_manual() {
 			if (isButtonPressed(2) == 1) {
 				time_yellow_ver_temp = time_yellow_ver;
 				time_yellow_hor_temp = time_yellow_hor;
+				//sau khi check cập nhật lại countdown đèn đỏ
+				time_red_ver_temp = time_red_ver;
+				time_red_hor_temp = time_red_hor;
 			}
 			//button1
 			if (isButtonPressed(0) == 1) {
@@ -52,12 +55,15 @@ void fsm_manual() {
 			if (isButtonPressed(2) == 1) {
 				time_green_ver_temp = time_green_ver;
 				time_green_hor_temp = time_green_hor;
+				//sau khi check cập nhật lại countdown đèn đỏ
+				time_red_ver_temp = time_red_ver;
+				time_red_hor_temp = time_red_hor;
 			}
 			//button1
 			if (isButtonPressed(0) == 1) {
 				status_traffic_ver = INIT_VER;
 				status_traffic_hor = INIT_HOR;
-				status_system = INIT;
+				status_system = AUTO;
 			}
 			break;
 	}
