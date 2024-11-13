@@ -10,4 +10,3 @@ traffic_light.c:60:6:toggle_green_led	8	static
 traffic_light.c:67:6:turn_off_yellow_green	8	static
 traffic_light.c:74:6:turn_off_red_green	8	static
 traffic_light.c:81:6:turn_off_red_yellow	8	static
-traffic_light.c:90:6:turn_off_all_led	8	static

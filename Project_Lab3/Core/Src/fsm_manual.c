@@ -6,10 +6,8 @@
  */
 #include "fsm_manual.h"
 
-//biến trạng thái cho toàn hệ thống
 int status_system = AUTO;
 
-//chuyển trạng thái theo nút bấm
 void fsm_manual() {
 	switch(status_system) {
 		case AUTO: //đèn hoạt động bình thường
@@ -19,7 +17,7 @@ void fsm_manual() {
 				status_system = RED_LED;
 			}
 			break;
-		case RED_LED: //thiết lập time cho 4 led red (modify time duration)
+		case RED_LED: //thiết lập time cho 4 led red
 			status_modify = RED_MODIFY;
 			fsm_setting();
 			//button3
@@ -32,7 +30,7 @@ void fsm_manual() {
 				status_system = YELLOW_LED;
 			}
 			break;
-		case YELLOW_LED: //thiết lập time cho 4 led yellow (modify time duration)
+		case YELLOW_LED: //thiết lập time cho 4 led yellow
 			status_modify = YELLOW_MODIFY;
 			fsm_setting();
 			//button3
@@ -48,7 +46,7 @@ void fsm_manual() {
 				status_system = GREEN_LED;
 			}
 			break;
-		case GREEN_LED: ////thiết lập time cho 4 led green (modify time duration)
+		case GREEN_LED: ////thiết lập time cho 4 led green
 			status_modify = GREEN_MODIFY;
 			fsm_setting();
 			//button3
@@ -80,7 +78,6 @@ void fsm_manual() {
 		if (idx_horizontal == 2) {
 			idx_horizontal = 0;
 		}
-
 		setTimer(2, 500);
 	}
 }
