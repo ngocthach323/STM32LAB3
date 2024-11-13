@@ -18,26 +18,26 @@
 #include "fsm_setting.h"
 
 //define các trạng thái toàn hệ thống
-#define AUTO 			0
-#define RED_LED 		1
-#define YELLOW_LED 		2
-#define GREEN_LED 		3
+#define AUTO 			1
+#define RED_LED 		2
+#define YELLOW_LED 		3
+#define GREEN_LED 		4
 
 //define trạng thái đèn giao thông mỗi chiều (AUTO)
-#define	INIT_VER		4
-#define RED_VER			5
-#define YELLOW_VER		6
-#define GREEN_VER		7
+#define	INIT_VER		5
+#define RED_VER			6
+#define YELLOW_VER		7
+#define GREEN_VER		8
 
-#define	INIT_HOR		8
-#define RED_HOR			9
-#define YELLOW_HOR		10
-#define GREEN_HOR		11
+#define	INIT_HOR		9
+#define RED_HOR			10
+#define YELLOW_HOR		11
+#define GREEN_HOR		12
 
 //define trạng thái modify time duration từng led màu
-#define RED_MODIFY		12
-#define YELLOW_MODIFY	13
-#define GREEN_MODIFY	14
+#define RED_MODIFY		13
+#define YELLOW_MODIFY	14
+#define GREEN_MODIFY	15
 
 //đỏ
 extern int time_red_ver;			//time đèn đỏ (auto) của đèn giao thông chiều dọc

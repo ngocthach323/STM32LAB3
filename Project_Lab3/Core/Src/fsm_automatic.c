@@ -19,7 +19,6 @@ void fsm_traffic_ver() {
 			traffic_buffer_ver[0] = time_red_ver * 1000; //lưu time đèn đỏ sáng
 			setTimer(0, traffic_buffer_ver[0]);
 			setTimer(5, 1000); //count down
-			setTimer(7, 50); //hiển thị led
 			status_traffic_ver = RED_VER;
 			break;
 		case RED_VER:
@@ -83,14 +82,6 @@ void fsm_traffic_ver() {
 			}
 			break;
 	}
-	if (timer_flag[7] == 1) {
-		update_7SEG_ver(idx_vertical);
-		idx_vertical++;
-		if(idx_vertical == 2) {
-			idx_vertical = 0;
-		}
-		setTimer(7, 250);
-	}
 }
 
 void fsm_traffic_hor() {
@@ -99,7 +90,6 @@ void fsm_traffic_hor() {
 			traffic_buffer_hor[0] = time_green_hor * 1000;
 			setTimer(1, traffic_buffer_hor[0]);
 			setTimer(6, 1000); //count down
-			setTimer(8, 50); //hiển thị led
 			status_traffic_hor = GREEN_HOR;
 			break;
 		case GREEN_HOR:
@@ -159,15 +149,6 @@ void fsm_traffic_hor() {
 				status_traffic_hor = GREEN_HOR;
 			}
 			break;
-	}
-
-	if (timer_flag[8] == 1) {
-		update_7SEG_hor(idx_horizontal);
-		idx_horizontal++;
-		if (idx_horizontal == 2) {
-			idx_horizontal = 0;
-		}
-		setTimer(8, 250);
 	}
 }
 

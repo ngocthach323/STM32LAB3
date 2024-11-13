@@ -81,6 +81,6 @@ void fsm_manual() {
 			idx_horizontal = 0;
 		}
 
-		setTimer(2, 250);
+		setTimer(2, 500);
 	}
 }

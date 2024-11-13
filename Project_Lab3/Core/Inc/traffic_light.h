@@ -26,5 +26,7 @@ void toggle_green_led();
 void turn_off_yellow_green();
 void turn_off_red_green();
 void turn_off_red_yellow();
+//tắt tất cả các đèn
+void turn_off_all_led();
 
 #endif /* INC_TRAFFIC_LIGHT_H_ */

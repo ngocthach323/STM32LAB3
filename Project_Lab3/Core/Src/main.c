@@ -94,7 +94,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer(2, 250);		// hiển thị 7SEG trong trạng thái modify
+  setTimer(2, 500);		// hiển thị 7SEG
   setTimer(4, 500); 	// nhấp nháy đèn khi modify time duration tần số 2Hz
   setTimer(9, 1000); 	// check setTimer
   while (1)
