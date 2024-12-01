@@ -11,7 +11,6 @@ int status_system = AUTO;
 void fsm_manual() {
 	switch(status_system) {
 		case AUTO: //đèn hoạt động bình thường
-			fsm_automatic();
 			//button1
 			if (isButtonPressed(0) == 1) {
 				status_system = RED_LED;
@@ -19,7 +18,6 @@ void fsm_manual() {
 			break;
 		case RED_LED: //thiết lập time cho 4 led red
 			status_modify = RED_MODIFY;
-			fsm_setting();
 			//button3
 			if (isButtonPressed(2) == 1) {
 				time_red_ver_temp = time_red_ver;
@@ -32,7 +30,6 @@ void fsm_manual() {
 			break;
 		case YELLOW_LED: //thiết lập time cho 4 led yellow
 			status_modify = YELLOW_MODIFY;
-			fsm_setting();
 			//button3
 			if (isButtonPressed(2) == 1) {
 				time_yellow_ver_temp = time_yellow_ver;
@@ -48,7 +45,6 @@ void fsm_manual() {
 			break;
 		case GREEN_LED: ////thiết lập time cho 4 led green
 			status_modify = GREEN_MODIFY;
-			fsm_setting();
 			//button3
 			if (isButtonPressed(2) == 1) {
 				time_green_ver_temp = time_green_ver;

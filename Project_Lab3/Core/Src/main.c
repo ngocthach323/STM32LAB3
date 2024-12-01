@@ -106,8 +106,8 @@ int main(void)
 	  }
 
 	  fsm_manual();
-//	  fsm_setting();
-//	  fsm_automatic();
+	  fsm_setting();
+	  fsm_automatic();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

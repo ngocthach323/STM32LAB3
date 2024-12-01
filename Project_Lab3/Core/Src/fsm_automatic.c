@@ -113,6 +113,9 @@ void fsm_traffic_hor() {
 }
 
 void fsm_automatic() {
-    fsm_traffic_ver();
-    fsm_traffic_hor();
+	if (status_system == AUTO) {
+	    fsm_traffic_ver();
+	    fsm_traffic_hor();
+	}
+	else return;
 }

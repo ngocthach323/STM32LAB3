@@ -9,6 +9,9 @@
 int status_modify = RED_MODIFY;
 
 void fsm_setting() {
+	if (status_system == AUTO) {
+		return;
+	}
 	switch (status_modify) {
 		case RED_MODIFY:
 			//tắt đèn vàng và xanh
