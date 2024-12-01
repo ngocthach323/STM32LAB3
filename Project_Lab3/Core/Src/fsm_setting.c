@@ -16,7 +16,7 @@ void fsm_setting() {
 			if (timer_flag[4] == 1) {
 				//nhấp nháy đèn đỏ
 				toggle_red_led();
-				setTimer(4, 500);
+				setTimer(4, 250);
 			}
 			//button2
 			if (isButtonPressed(1) == 1) {
@@ -35,7 +35,7 @@ void fsm_setting() {
 			if (timer_flag[4] == 1) {
 				//nhấp nháy đèn vàng
 				toggle_yellow_led();
-				setTimer(4, 500);
+				setTimer(4, 250);
 			}
 			//button2
 			if (isButtonPressed(1) == 1) {
@@ -59,7 +59,7 @@ void fsm_setting() {
 			if (timer_flag[4] == 1) {
 				//nhấp nháy đèn xanh
 				toggle_green_led();
-				setTimer(4, 500);
+				setTimer(4, 250);
 			}
 			//button2
 			if (isButtonPressed(1) == 1) {

@@ -21,4 +21,3 @@ int time_green_ver = 3;
 int time_green_hor = 3;
 int time_green_ver_temp = 3;
 int time_green_hor_temp = 3;
-
